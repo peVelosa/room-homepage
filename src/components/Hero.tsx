@@ -33,9 +33,9 @@ const Hero = () => {
   return (
     <section className="grid grid-rows-[minmax(0,22rem)_1fr] lg:grid-cols-3 lg:grid-rows-1 lg:place-content-center">
       <div className="relative isolate z-10 lg:col-span-2">
-        <div className="overflow-hidden">
+        <div className="h-full overflow-hidden">
           <div
-            className="flex transition-transform ease-in-out"
+            className="flex h-full transition-transform ease-in-out"
             style={{ transform: `translateX(-${slideActive * 100}%)` }}
           >
             {heroSlide?.map((slide) => (
